@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{218D01E7-B880-41FA-939B-9A8D60564227}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1AB2311-BBDA-47E6-8B43-16E25ED45469}"
@@ -14,6 +14,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.SyncWorker", "src\Weather.Tracker.SyncWorker\Weather.Tracker.SyncWorker.csproj", "{4D37A77E-B127-4A42-84DF-D44D020EB9C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.Tests", "tests\Weather.Tracker.Tests\Weather.Tracker.Tests.csproj", "{26764232-7EF8-4006-83C3-CCBBECDB9616}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{7E1782B4-E93E-466D-A393-9AF9A19C2595}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
