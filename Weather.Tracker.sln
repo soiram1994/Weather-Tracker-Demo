@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 #
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{218D01E7-B880-41FA-939B-9A8D60564227}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1AB2311-BBDA-47E6-8B43-16E25ED45469}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C1AB2311-BBDA-47E6-8B43-16E25ED45469}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.API", "src\Weather.Tracker.API\Weather.Tracker.API.csproj", "{B4C7D944-561C-4D6D-A032-6FF77FA70675}"
 EndProject
@@ -13,12 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.SyncWorker", "src\Weather.Tracker.SyncWorker\Weather.Tracker.SyncWorker.csproj", "{4D37A77E-B127-4A42-84DF-D44D020EB9C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.Tests", "tests\Weather.Tracker.Tests\Weather.Tracker.Tests.csproj", "{26764232-7EF8-4006-83C3-CCBBECDB9616}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{7E1782B4-E93E-466D-A393-9AF9A19C2595}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.md = Readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tracker.Tests", "tests\Weather.Tracker.Tests\Weather.Tracker.Tests.csproj", "{1468C38E-AE4E-4EF5-B4CB-03419B452EAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,16 +42,16 @@ Global
 		{4D37A77E-B127-4A42-84DF-D44D020EB9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D37A77E-B127-4A42-84DF-D44D020EB9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D37A77E-B127-4A42-84DF-D44D020EB9C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26764232-7EF8-4006-83C3-CCBBECDB9616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26764232-7EF8-4006-83C3-CCBBECDB9616}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26764232-7EF8-4006-83C3-CCBBECDB9616}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26764232-7EF8-4006-83C3-CCBBECDB9616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1468C38E-AE4E-4EF5-B4CB-03419B452EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1468C38E-AE4E-4EF5-B4CB-03419B452EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1468C38E-AE4E-4EF5-B4CB-03419B452EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1468C38E-AE4E-4EF5-B4CB-03419B452EAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B4C7D944-561C-4D6D-A032-6FF77FA70675} = {218D01E7-B880-41FA-939B-9A8D60564227}
 		{8C77326C-4169-405B-86F9-8433E3E7CE6D} = {218D01E7-B880-41FA-939B-9A8D60564227}
 		{6B216FD1-8DAF-498D-916C-22A148C45B7F} = {218D01E7-B880-41FA-939B-9A8D60564227}
 		{4D37A77E-B127-4A42-84DF-D44D020EB9C4} = {218D01E7-B880-41FA-939B-9A8D60564227}
-		{26764232-7EF8-4006-83C3-CCBBECDB9616} = {C1AB2311-BBDA-47E6-8B43-16E25ED45469}
+		{1468C38E-AE4E-4EF5-B4CB-03419B452EAC} = {C1AB2311-BBDA-47E6-8B43-16E25ED45469}
 	EndGlobalSection
 EndGlobal
