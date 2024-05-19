@@ -41,6 +41,8 @@ public class CompleteFlow(SQLFixture fixture, WebApplicationFactory<Program> web
         weatherEntries.Should().NotBeNull();
         weatherEntries.Items.Should().NotBeNullOrEmpty();
         var weatherEntryDtos = weatherEntries.Items;
+
+        weatherEntryDtos.Should().NotBeNullOrEmpty();
         weatherEntryDtos.Should().HaveCount(1);
         weatherEntryDtos.First().City.Should().NotBeNullOrEmpty();
     }
