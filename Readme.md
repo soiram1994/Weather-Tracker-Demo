@@ -44,5 +44,5 @@ and a worker service for synchronizing weather information from an external sour
    dotnet run --project Weather.Tracker.Host
    ```
 
-*Page under construction... Run the Weather.Tracker.Host project for overview of the project, currently the data stored
-are from London. The target city can be changed by settings the 'CITY_NAME' environment variable in the SyncWorker*
+*Page under construction... Run the Weather.Tracker.Host project for an overview of the project, currently the data stored
+are from London. The target city can be changed by setting the 'CITY_NAME' environment variable in the SyncWorker*
