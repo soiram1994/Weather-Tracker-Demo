@@ -40,7 +40,16 @@ public static class Registration
     public static IServiceCollection AddApplicationDbContext(this IServiceCollection services,
         string? connectionString)
     {
-        services.AddDbContext<ApplicationDbContext>(options => { options.UseSqlServer(connectionString); });
+        services.AddDbContext<ApplicationDbContext>(options =>
+        {
+            options.UseSqlServer(connectionString,
+                optionsBuilder =>
+                {
+                    optionsBuilder
+                        .EnableRetryOnFailure(10, TimeSpan.FromSeconds(5), null)
+                        .UseQuerySplittingBehavior(QuerySplittingBehavior.SingleQuery);
+                });
+        });
         return services;
     }
 }

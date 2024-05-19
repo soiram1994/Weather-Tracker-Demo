@@ -7,6 +7,7 @@
       &lt;TestId&gt;xUnit::1468C38E-AE4E-4EF5-B4CB-03419B452EAC::net8.0::Weather.Tracker.Tests.Integration.RepositoryIntegrationTests.CanInsertAndRetrieveData&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::1468C38E-AE4E-4EF5-B4CB-03419B452EAC::net8.0::Weather.Tracker.Tests.Integration.E2E.WeatherDataIsRetrievedStoredAndQueried&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::1468C38E-AE4E-4EF5-B4CB-03419B452EAC::net8.0::Weather.Tracker.Tests.Integration.E2E&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::1468C38E-AE4E-4EF5-B4CB-03419B452EAC::net8.0::Weather.Tracker.Tests.Integration.CompleteFlow&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
     &lt;ProjectFile&gt;1468C38E-AE4E-4EF5-B4CB-03419B452EAC/d:Integration/f:RepositoryIntegrationTests.cs&lt;/ProjectFile&gt;
   &lt;/Or&gt;

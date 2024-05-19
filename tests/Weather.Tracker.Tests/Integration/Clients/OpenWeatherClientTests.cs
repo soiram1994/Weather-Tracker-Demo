@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace Weather.Tracker.Tests.Integration;
 
 public class OpenWeatherClientTests
@@ -16,6 +18,6 @@ public class OpenWeatherClientTests
         var result = await client.GetWeatherByCityName(city);
 
         // Assert
-        Assert.NotNull(result);
+        result.IsSuccess.Should().BeTrue();
     }
 }

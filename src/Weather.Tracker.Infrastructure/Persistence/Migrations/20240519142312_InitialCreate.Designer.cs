@@ -12,7 +12,7 @@ using Weather.Tracker.Infrastructure.Persistence;
 namespace Weather.Tracker.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240518200425_InitialCreate")]
+    [Migration("20240519142312_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

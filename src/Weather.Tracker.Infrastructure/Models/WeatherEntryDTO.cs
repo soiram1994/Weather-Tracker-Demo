@@ -6,8 +6,8 @@ public class WeatherEntryDTO
     public string City { get; set; }
     public string Country { get; set; }
     public double Temperature { get; set; }
-    public string Humidity { get; set; }
-    public string WindDegree { get; set; }
-    public string WindSpeed { get; set; }
+    public int Humidity { get; set; }
+    public int WindDegree { get; set; }
+    public int WindSpeed { get; set; }
     public long Timestamp { get; set; }
 }
