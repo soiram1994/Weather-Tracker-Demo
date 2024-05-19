@@ -1,10 +1,10 @@
-using System.Xml.Serialization;
+using System.Net.Http.Json;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Weather.Tracker.Infrastructure.Models;
 using Weather.Tracker.Tests.Fixtures;
 
-namespace Weather.Tracker.Tests.Integration;
+namespace Weather.Tracker.Tests.Integration.E2E;
 
 public class CompleteFlow(SQLFixture fixture, WebApplicationFactory<Program> webApplication)
     : IClassFixture<SQLFixture>, IClassFixture<WebApplicationFactory<Program>>
@@ -37,12 +37,10 @@ public class CompleteFlow(SQLFixture fixture, WebApplicationFactory<Program> web
             throw new Exception($"Request failed with status code {response.StatusCode}: {content}");
         }
 
-        var contentString = await response.Content.ReadAsStringAsync();
-        var xmlSerializer = new XmlSerializer(typeof(PagedResult<WeatherEntryDTO>));
-        var weatherEntries = (PagedResult<WeatherEntryDTO>)xmlSerializer.Deserialize(new StringReader(contentString))!;
+        var weatherEntries = await response.Content.ReadFromJsonAsync<PagedResult<WeatherEntryDTO>>();
+        weatherEntries.Should().NotBeNull();
+        weatherEntries.Items.Should().NotBeNullOrEmpty();
         var weatherEntryDtos = weatherEntries.Items;
-
-        weatherEntryDtos.Should().NotBeNullOrEmpty();
         weatherEntryDtos.Should().HaveCount(1);
         weatherEntryDtos.First().City.Should().NotBeNullOrEmpty();
     }
