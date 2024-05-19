@@ -33,6 +33,11 @@ and a worker service for synchronizing weather information from an external sour
     ```
 
 3. **Build the project:**
+
+   ```sh
+   dotnet build
+   ```
+   
 4. **Run the project:**
 
    ```sh
