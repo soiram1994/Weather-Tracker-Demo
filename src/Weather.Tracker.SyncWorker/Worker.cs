@@ -6,6 +6,7 @@ public class Worker(ILogger<Worker> logger, IServiceProvider serviceProvider)
     : BackgroundService
 {
     private readonly int _delay = int.Parse(Environment.GetEnvironmentVariable("DELAY") ?? "1");
+    private readonly string _cityName = Environment.GetEnvironmentVariable("CITY_NAME") ?? "London";
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -15,7 +16,7 @@ public class Worker(ILogger<Worker> logger, IServiceProvider serviceProvider)
         var openWeatherRetrievalService = scope.ServiceProvider.GetRequiredService<IOpenWeatherRetrievalService>();
         while (stoppingToken.IsCancellationRequested == false)
         {
-            await openWeatherRetrievalService.ExecuteAsync();
+            await openWeatherRetrievalService.ExecuteAsync(_cityName);
             await Task.Delay(TimeSpan.FromHours(_delay), stoppingToken);
         }
     }
